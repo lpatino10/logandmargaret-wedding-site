@@ -1,0 +1,11 @@
+---
+import { getEntry } from "astro:content";
+import Layout from "../layouts/TabPage.astro";
+
+const rsvp = await getEntry("tabs", "rsvp");
+const { Content } = await rsvp.render();
+---
+
+<Layout title="RSVP" description="Link to RSVP">
+  <Content />
+</Layout>
