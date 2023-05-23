@@ -1,0 +1,11 @@
+---
+import { getEntry } from "astro:content";
+import Layout from "../layouts/TabPage.astro";
+
+const registry = await getEntry("tabs", "registry");
+const { Content } = await registry.render();
+---
+
+<Layout title="Registry" description="Wedding registry">
+  <Content />
+</Layout>

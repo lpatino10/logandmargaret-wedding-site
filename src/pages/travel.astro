@@ -1,0 +1,11 @@
+---
+import { getEntry } from "astro:content";
+import Layout from "../layouts/TabPage.astro";
+
+const travel = await getEntry("tabs", "travel");
+const { Content } = await travel.render();
+---
+
+<Layout title="Travel" description="Info about getting to the wedding">
+  <Content />
+</Layout>

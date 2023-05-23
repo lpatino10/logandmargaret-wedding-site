@@ -1,0 +1,11 @@
+---
+import { getEntry } from "astro:content";
+import Layout from "../layouts/TabPage.astro";
+
+const schedule = await getEntry("tabs", "schedule");
+const { Content } = await schedule.render();
+---
+
+<Layout title="Schedule" description="Wedding schedule">
+  <Content />
+</Layout>

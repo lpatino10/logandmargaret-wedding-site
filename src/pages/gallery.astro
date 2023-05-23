@@ -1,0 +1,11 @@
+---
+import { getEntry } from "astro:content";
+import Layout from "../layouts/TabPage.astro";
+
+const gallery = await getEntry("tabs", "gallery");
+const { Content } = await gallery.render();
+---
+
+<Layout title="Gallery" description="Photo gallery of Margaret and Logan">
+  <Content />
+</Layout>
