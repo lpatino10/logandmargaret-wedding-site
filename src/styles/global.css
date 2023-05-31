@@ -24,7 +24,8 @@
 	--dark-red: #F42E2E;
 	--dark-orange: #E05619;
 	--dark-green: #246C09;
-	--coral: #F8B08C;
+	--dark-coral: #F8B08C;
+	--coral: #FFD7C4;
 }
 
 body {
@@ -77,7 +78,7 @@ h6,
 strong,
 b,
 a {
-	color: var(--dark-green);
+	color: var(--dark-red);
 }
 
 nav a {
