@@ -1,0 +1,25 @@
+---
+import TimelineEntry, { Props as EntryProps } from "./TimelineEntry.astro";
+
+type Entry = Pick<EntryProps, "title" | "date" | "time" | "description">;
+interface Props {
+  entries: Entry[];
+}
+
+const { entries } = Astro.props;
+---
+
+<div class="timeline">
+  {
+    entries.map((entry, idx) => (
+      <TimelineEntry side={idx % 2 === 0 ? "left" : "right"} {...entry} />
+    ))
+  }
+</div>
+<style>
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+</style>
