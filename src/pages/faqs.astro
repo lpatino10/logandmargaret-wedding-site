@@ -1,11 +1,5 @@
 ---
-import { getEntry } from "astro:content";
 import Layout from "../layouts/TabPage.astro";
-
-const faqs = await getEntry("tabs", "faqs");
-const { Content } = await faqs.render();
 ---
 
-<Layout title="FAQs" description="Frequently asked wedding questions">
-  <Content />
-</Layout>
+<Layout title="FAQs" description="Frequently asked wedding questions" />

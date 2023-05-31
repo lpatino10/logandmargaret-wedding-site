@@ -1,11 +1,8 @@
 ---
-import { getEntry } from "astro:content";
 import Layout from "../layouts/TabPage.astro";
-
-const thingsToDo = await getEntry("tabs", "things-to-do");
-const { Content } = await thingsToDo.render();
 ---
 
-<Layout title="Things to Do" description="Things to do in Cartagena, Colombia">
-  <Content />
-</Layout>
+<Layout
+  title="Things to Do"
+  description="Things to do in Cartagena, Colombia"
+/>
