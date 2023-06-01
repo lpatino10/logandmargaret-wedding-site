@@ -6,11 +6,25 @@ import PhotoGrid, {
 
 import stoop from "../images/570-stoop.jpg";
 import couch from "../images/570-couch.jpg";
+// import couch from "../images/570-couch-team.jpg";
 import stoopLaughing from "../images/570-stoop-laugh.jpg";
 
-import soccer from "../images/soccer.jpg";
+// import soccer from "../images/soccer.jpg";
+import soccer from "../images/soccer-with-sousas.jpg";
 import snowmobile from "../images/snowmobile.jpg";
-import hiking from "../images/hiking.jpg";
+// import skiing from "../images/skiing-sugarbush.jpg";
+// import hiking from "../images/hiking.jpg";
+import hiking from "../images/hiking-acadia.jpg";
+
+import germany from "../images/germany-cherries.jpg";
+import amsterdam from "../images/amsterdam.jpg";
+import london from "../images/london.jpg";
+// import dom from "../images/dom.jpg";
+
+import proposalCloseup from "../images/proposal-closeup.jpg";
+// import proposalMargKiss from "../images/proposal-marg-kiss.jpg";
+import proposalFlowers from "../images/proposal-flowers.jpg";
+import proposalLogKiss from "../images/proposal-log-kiss.jpg";
 
 const firstSectionImages: PhotoGridProps["images"] = [
   {
@@ -38,7 +52,37 @@ const secondSectionImages: PhotoGridProps["images"] = [
   },
   {
     src: hiking,
-    alt: "at the top of Mt Washington",
+    alt: "peaking in Acadia",
+  },
+];
+
+const thirdSectionImages: PhotoGridProps["images"] = [
+  {
+    src: germany,
+    alt: "next door to Beethoven",
+  },
+  {
+    src: amsterdam,
+    alt: "biking around",
+  },
+  {
+    src: london,
+    alt: "walking around London",
+  },
+];
+
+const fourthSectionImages: PhotoGridProps["images"] = [
+  {
+    src: proposalCloseup,
+    alt: "!!!",
+  },
+  {
+    src: proposalLogKiss,
+    alt: "!!!",
+  },
+  {
+    src: proposalFlowers,
+    alt: "!!!",
   },
 ];
 ---
@@ -79,6 +123,7 @@ const secondSectionImages: PhotoGridProps["images"] = [
       pandemic helped build a strong foundation for our relationship.
     </p>
   </div>
+  <PhotoGrid images={thirdSectionImages} />
   <div class="text-container">
     <h4>The Proposal</h4>
     <p>
@@ -90,4 +135,5 @@ const secondSectionImages: PhotoGridProps["images"] = [
       friends, and the rest is history!
     </p>
   </div>
+  <PhotoGrid images={fourthSectionImages} />
 </Layout>
