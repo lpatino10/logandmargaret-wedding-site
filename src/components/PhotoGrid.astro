@@ -1,0 +1,38 @@
+---
+import { Image } from "@astrojs/image/components";
+
+interface ImageProps {
+  src: ImageMetadata;
+  alt: string;
+}
+
+export interface Props {
+  images: [ImageProps, ImageProps, ImageProps];
+}
+
+const { images } = Astro.props;
+---
+
+<div class="photo-grid">
+  {
+    images.map(({ src, alt }) => (
+      <div class="photo">
+        <Image src={src} alt={alt} />
+      </div>
+    ))
+  }
+</div>
+<style>
+  .photo-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .photo {
+    height: 300px;
+    width: 300px;
+  }
+</style>

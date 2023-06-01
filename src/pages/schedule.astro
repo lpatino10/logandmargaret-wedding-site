@@ -4,30 +4,25 @@ import Timeline from "../components/Timeline.astro";
 
 const entries = [
   {
-    title: "Welcome Dinner",
+    title: "Welcome Party",
     date: "Thursday, April 18th",
-    description: "First day for everyone to get together at ___ for a meal.",
+    description: "Details to Follow!",
   },
   {
-    title: "Group Activity",
+    title: "Daytime Group Activity",
     date: "Friday, April 19th",
-    description:
-      "TBD, but we want everyone to spend some time getting to know each other.",
+    description: "Details to Follow!",
   },
   {
     title: "Wedding Day",
     date: "Saturday, April 20th",
     description: "The big day!!",
   },
-  {
-    title: "Brunch & Send-off",
-    date: "Sunday, April 21th",
-    description:
-      "Unfortunately it'll have to come to an end, but we'd love to say goodbye to everyone over some coffee!",
-  },
 ];
 ---
 
 <Layout title="Schedule" description="Wedding schedule">
-  <Timeline entries={entries} />
+  <div class="text-container">
+    <Timeline entries={entries} />
+  </div>
 </Layout>

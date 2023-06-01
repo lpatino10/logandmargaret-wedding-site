@@ -1,0 +1,93 @@
+---
+import Layout from "../layouts/TabPage.astro";
+import PhotoGrid, {
+  Props as PhotoGridProps,
+} from "../components/PhotoGrid.astro";
+
+import stoop from "../images/570-stoop.jpg";
+import couch from "../images/570-couch.jpg";
+import stoopLaughing from "../images/570-stoop-laugh.jpg";
+
+import soccer from "../images/soccer.jpg";
+import snowmobile from "../images/snowmobile.jpg";
+import hiking from "../images/hiking.jpg";
+
+const firstSectionImages: PhotoGridProps["images"] = [
+  {
+    src: stoop,
+    alt: "roomies +1!",
+  },
+  {
+    src: couch,
+    alt: "Michael third-wheeling",
+  },
+  {
+    src: stoopLaughing,
+    alt: "candid",
+  },
+];
+
+const secondSectionImages: PhotoGridProps["images"] = [
+  {
+    src: soccer,
+    alt: "champs again",
+  },
+  {
+    src: snowmobile,
+    alt: "before the ride of our lives",
+  },
+  {
+    src: hiking,
+    alt: "at the top of Mt Washington",
+  },
+];
+---
+
+<Layout title="Our Story" description="Photo gallery of Margaret and Logan">
+  <div class="text-container">
+    <h4>Modern Love</h4>
+    <p>
+      Logan moved from Ohio into Margaret's apartment in Boston! Lucky for us,
+      our third roommate, Michael, found Logan on Reddit. We were roommates for
+      6 months, and it didn't take long for there to be a connection (at which
+      point Margaret promptly told Logan he had to move out so we could date).
+    </p>
+  </div>
+  <PhotoGrid images={firstSectionImages} />
+  <div class="text-container">
+    <h4>Fun in the Sun (and Snow)</h4>
+    <p>
+      Both of us love sports and the outdoors, so it's always been a big part of
+      our relationship. Logan knew he met his match when Margaret bested him in
+      soccer volleyball soon after we met. Logan joined and made a big impact on
+      our <strong>league-winning</strong> soccer team ("The Soccer Team"), which
+      we still play together on, five years later. Margaret showed her commitment
+      to Logan by slogging through many a bunny hill to share her ski knowledge with
+      a boy from Ohio. We knew we were a good match when we consistently picked out
+      overly-intense hikes to do together whenever we got the chance.
+    </p>
+  </div>
+  <PhotoGrid images={secondSectionImages} />
+  <div class="text-container">
+    <h4>Ausländer</h4>
+    <p>
+      Another shared passion of ours is traveling, and in 2021 we got the
+      opportunity to live in Cologne, Germany for a year as part of Margaret's
+      PhD program. It was an amazing chance to travel all over Europe, to learn
+      German (only Logan), and experience life through a new lens together. The
+      lessons we learned from moving to a new country together during the
+      pandemic helped build a strong foundation for our relationship.
+    </p>
+  </div>
+  <div class="text-container">
+    <h4>The Proposal</h4>
+    <p>
+      On a sunny April day, we took a walk to the Arboretum. Logan knew Margaret
+      would love any chance to hang out with some trees. There was a spot
+      amongst the pines picked out with our friends Emma and Freddy waiting in
+      the bushes to take pictures. We both blacked out, but she said yes, and we
+      got to celebrate at night over pisco sours with a bunch of our closest
+      friends, and the rest is history!
+    </p>
+  </div>
+</Layout>
