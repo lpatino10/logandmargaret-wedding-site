@@ -8,20 +8,72 @@ import { SITE_TITLE } from "../consts";
 		{SITE_TITLE}
 	</h1>
 	<nav>
+		<h4 class="small-nav-title hide">M & L</h4>
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/schedule">Schedule</HeaderLink>
 		<HeaderLink href="/our-story">Our Story</HeaderLink>
-		<HeaderLink href="/travel">Travel</HeaderLink>
+		<!-- <HeaderLink href="/travel">Travel</HeaderLink> -->
+		<HeaderLink href="/faqs">FAQs</HeaderLink>
 		<!-- <HeaderLink href="/wedding-party">Wedding Party</HeaderLink> -->
 		<HeaderLink href="/registry">Registry</HeaderLink>
 		<!-- <HeaderLink href="/things-to-do">Things To Do</HeaderLink> -->
-		<!-- <HeaderLink href="/faqs">FAQs</HeaderLink> -->
 		<!-- <HeaderLink href="/rsvp">RSVP</HeaderLink> -->
 	</nav>
 </header>
+<script>
+	const smallTitle = document.querySelector(".small-nav-title");
+	const toggleVisibility = (entries: IntersectionObserverEntry[]) => {
+		if (!smallTitle) {
+			return;
+		}
+
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				smallTitle.classList.add("hide");
+				smallTitle.classList.remove("show");
+			} else {
+				smallTitle.classList.remove("hide");
+				smallTitle.classList.add("show");
+			}
+		});
+	};
+	const observer = new IntersectionObserver(toggleVisibility, {
+		rootMargin: "32px",
+	});
+
+	const mainTitle = document.querySelector("h1");
+	if (mainTitle) {
+		observer.observe(mainTitle);
+	}
+</script>
 <style>
 	header {
-		margin: 0em 0 1em;
+		display: initial;
 		text-align: center;
+	}
+
+	nav {
+		background-color: var(--coral);
+		padding: 1rem 0 1rem 0;
+		position: sticky;
+		top: 0;
+	}
+
+	.small-nav-title {
+		color: var(--dark-red);
+		display: inline-block;
+		font-family: "NickainleyNormal", cursive;
+		left: 2rem;
+		margin: 0;
+		position: absolute;
+		transition: opacity 0.3s;
+	}
+
+	.hide {
+		opacity: 0;
+	}
+
+	.show {
+		opacity: 1;
 	}
 </style>
