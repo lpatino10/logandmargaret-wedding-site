@@ -1,5 +1,21 @@
 ---
 import Layout from "../layouts/TabPage.astro";
+import Button from "../components/Button.astro";
 ---
 
-<Layout title="RSVP" description="Link to RSVP" />
+<Layout title="RSVP" description="Link to RSVP">
+  <div class="text-container">
+    <p>You can RSVP through our virtual save the date:</p>
+    <div class="button-wrapper">
+      <Button href="" label="RSVP" />
+    </div>
+  </div>
+</Layout>
+<style>
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    width: 100%;
+  }
+</style>
