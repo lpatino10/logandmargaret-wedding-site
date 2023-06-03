@@ -1,15 +1,27 @@
 ---
 import Layout from "../layouts/TabPage.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout title="Registry" description="Wedding registry">
   <div class="text-container">
-    <a
-      href="https://www.zola.com/registry/logan-margaret"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Zola
-    </a>
+    <p>
+      Your presence on the big day is the most important thing to us, but we
+      appreciate any additional support!
+    </p>
+    <div class="button-wrapper">
+      <Button
+        href="https://www.zola.com/registry/logan-margaret"
+        label="View registry"
+      />
+    </div>
   </div>
 </Layout>
+<style>
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    width: 100%;
+  }
+</style>
