@@ -14,13 +14,7 @@ const { images } = Astro.props;
 ---
 
 <div class="photo-grid">
-  {
-    images.map(({ src, alt }) => (
-      <div class="photo">
-        <Image src={src} alt={alt} />
-      </div>
-    ))
-  }
+  {images.map(({ src, alt }) => <Image src={src} alt={alt} />)}
 </div>
 <style>
   .photo-grid {
@@ -31,8 +25,15 @@ const { images } = Astro.props;
     padding: 20px;
   }
 
-  .photo {
-    height: 300px;
-    width: 300px;
+  @media (min-width: 800px) {
+    .photo-grid {
+      grid-template-columns: repeat(auto-fit, 350px);
+    }
+  }
+
+  @media (min-width: 1300px) {
+    .photo-grid {
+      grid-template-columns: repeat(auto-fit, 400px);
+    }
   }
 </style>
