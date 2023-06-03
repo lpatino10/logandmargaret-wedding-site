@@ -3,11 +3,53 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header>
-	<h1>
-		{"Margaret & Logan"}
-	</h1>
-	<nav>
-		<h4 class="small-nav-title hide">M & L</h4>
+	<div id="large-header" class="header-wrapper">
+		<h1>
+			{"Margaret & Logan"}
+		</h1>
+		<nav>
+			<h4 class="initials small-nav-title hide">M & L</h4>
+			<HeaderLink withUnderline href="/">Home</HeaderLink>
+			<HeaderLink withUnderline href="/our-story">Our Story</HeaderLink>
+			<HeaderLink withUnderline href="/schedule">Schedule</HeaderLink>
+			<!-- <HeaderLink href="/travel">Travel</HeaderLink> -->
+			<HeaderLink withUnderline href="/faqs">FAQs</HeaderLink>
+			<!-- <HeaderLink href="/wedding-party">Wedding Party</HeaderLink> -->
+			<HeaderLink withUnderline href="/registry">Registry</HeaderLink>
+			<!-- <HeaderLink href="/things-to-do">Things To Do</HeaderLink> -->
+			<HeaderLink withUnderline href="/rsvp">RSVP</HeaderLink>
+		</nav>
+	</div>
+	<div id="small-header" class="header-wrapper">
+		<h4 id="small-header-title" class="initials">M & L</h4>
+		<svg
+			id="menu-button"
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 448 512"
+		>
+			<path
+				d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+			>
+			</path>
+		</svg>
+	</div>
+</header>
+<div class="menu-shade">
+	<svg
+		id="close-button"
+		xmlns="http://www.w3.org/2000/svg"
+		width="32"
+		height="32"
+		viewBox="0 0 384 512"
+	>
+		<path
+			d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+		>
+		</path>
+	</svg>
+	<div class="shade-links">
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/our-story">Our Story</HeaderLink>
 		<HeaderLink href="/schedule">Schedule</HeaderLink>
@@ -17,8 +59,8 @@ import HeaderLink from "./HeaderLink.astro";
 		<HeaderLink href="/registry">Registry</HeaderLink>
 		<!-- <HeaderLink href="/things-to-do">Things To Do</HeaderLink> -->
 		<HeaderLink href="/rsvp">RSVP</HeaderLink>
-	</nav>
-</header>
+	</div>
+</div>
 <script>
 	const smallTitle = document.querySelector(".small-nav-title");
 	const toggleVisibility = (entries: IntersectionObserverEntry[]) => {
@@ -45,10 +87,28 @@ import HeaderLink from "./HeaderLink.astro";
 		observer.observe(mainTitle);
 	}
 </script>
+<script>
+	const menuButton = document.querySelector("#menu-button");
+	const menuShade = document.querySelector(".menu-shade");
+	const closeButton = document.querySelector("#close-button");
+
+	if (menuButton && menuShade) {
+		menuButton.addEventListener("click", () => {
+			(menuShade as HTMLDivElement).style.height = "100vh";
+		});
+	}
+
+	if (closeButton && menuShade) {
+		closeButton.addEventListener("click", () => {
+			(menuShade as HTMLDivElement).style.height = "0";
+		});
+	}
+</script>
 <style>
 	header {
 		display: initial;
-		text-align: center;
+		position: relative;
+		z-index: 999;
 	}
 
 	nav {
@@ -58,14 +118,77 @@ import HeaderLink from "./HeaderLink.astro";
 		top: 0;
 	}
 
-	.small-nav-title {
+	nav a {
+		margin-right: 1.25rem;
+	}
+
+	svg {
+		fill: var(--dark-red);
+	}
+
+	.header-wrapper {
+		background-color: var(--coral);
+		height: 100%;
+		width: 100%;
+	}
+
+	#large-header {
+		display: none;
+		text-align: center;
+	}
+
+	#small-header {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+	}
+
+	.initials {
 		color: var(--dark-red);
-		display: inline-block;
 		font-family: "NickainleyNormal", cursive;
-		left: 2rem;
 		margin: 0;
+	}
+
+	.small-nav-title {
+		left: 20px;
 		position: absolute;
+		top: 12px;
 		transition: opacity 0.3s;
+	}
+
+	#small-header-title {
+		padding: 0.5rem 0 0.5rem 20px;
+	}
+
+	.menu-shade {
+		background-color: var(--coral);
+		height: 0;
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+		transition: height 0.5s;
+	}
+
+	.shade-links {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding-top: 4rem;
+		text-align: center;
+	}
+
+	#menu-button {
+		padding-right: 20px;
+	}
+
+	#close-button {
+		position: absolute;
+		right: 16px;
+		top: 14px;
 	}
 
 	.hide {
@@ -74,5 +197,15 @@ import HeaderLink from "./HeaderLink.astro";
 
 	.show {
 		opacity: 1;
+	}
+
+	@media (min-width: 800px) {
+		#large-header {
+			display: inherit;
+		}
+
+		#small-header {
+			display: none;
+		}
 	}
 </style>
