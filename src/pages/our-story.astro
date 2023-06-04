@@ -84,7 +84,7 @@ const fourthSectionImages: PhotoGridProps["images"] = [
     alt: "!!!",
   },
   {
-    src: proposalModeling,
+    src: proposalStaring,
     alt: "!!!",
   },
 ];
@@ -92,7 +92,7 @@ const fourthSectionImages: PhotoGridProps["images"] = [
 
 <Layout title="Our Story" description="Photo gallery of Margaret and Logan">
   <div class="text-container">
-    <h4>Modern Love</h4>
+    <h3>Modern Love</h3>
     <p>
       Logan moved from Ohio into Margaret's apartment in Boston! Lucky for us,
       our third roommate, Michael, found Logan on Reddit. We were roommates for
@@ -102,7 +102,7 @@ const fourthSectionImages: PhotoGridProps["images"] = [
   </div>
   <PhotoGrid images={firstSectionImages} />
   <div class="text-container">
-    <h4>Fun in the Sun (and Snow)</h4>
+    <h3>Fun in the Sun (and Snow)</h3>
     <p>
       Both of us love sports and the outdoors, so it's always been a big part of
       our relationship. Logan knew he met his match when Margaret bested him in
@@ -116,7 +116,7 @@ const fourthSectionImages: PhotoGridProps["images"] = [
   </div>
   <PhotoGrid images={secondSectionImages} />
   <div class="text-container">
-    <h4>Ausländer</h4>
+    <h3>Ausländer</h3>
     <p>
       Another shared passion of ours is traveling, and in 2021 we got the
       opportunity to live in Cologne, Germany for a year as part of Margaret's
@@ -128,7 +128,7 @@ const fourthSectionImages: PhotoGridProps["images"] = [
   </div>
   <PhotoGrid images={thirdSectionImages} />
   <div class="text-container">
-    <h4>The Proposal</h4>
+    <h3>The Proposal</h3>
     <p>
       On a sunny April day, we took a walk to the Arboretum. Logan knew Margaret
       would love any chance to hang out with some trees. There was a spot
@@ -140,3 +140,8 @@ const fourthSectionImages: PhotoGridProps["images"] = [
   </div>
   <PhotoGrid images={fourthSectionImages} />
 </Layout>
+<style>
+  h3 {
+    align-self: center;
+  }
+</style>

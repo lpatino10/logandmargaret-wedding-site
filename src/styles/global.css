@@ -30,7 +30,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: var(--dark-green);
 }
 
 h1 {
@@ -40,22 +40,22 @@ h1 {
 }
 
 h2 {
-	font-family: 'BantayogLight', sans-serif;
+	font-family: 'NickainleyNormal', cursive;
 	font-size: 3.157rem;
 }
 
 h3 {
-	font-family: 'BantayogLight', sans-serif;
+	font-family: 'NickainleyNormal', cursive;
 	font-size: 2.369rem;
 }
 
 h4 {
-	font-family: 'BantayogLight', sans-serif;
+	font-family: 'NickainleyNormal', cursive;
 	font-size: 1.777rem;
 }
 
 h5 {
-	font-family: 'BantayogLight', sans-serif;
+	font-family: 'NickainleyNormal', cursive;
 	font-size: 1.333rem;
 }
 
@@ -94,13 +94,15 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid #444;
+	border-top: 1px solid var(--dark-green);
 	margin: 1em 0;
 	padding: 0;
 }
 
 .text-container {
+	display: flex;
+	flex-direction: column;
 	margin: auto;
+	max-width: 100ch;
 	padding: 20px 20px 46px 20px;
-	max-width: 65ch;
 }
