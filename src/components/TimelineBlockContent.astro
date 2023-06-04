@@ -4,7 +4,8 @@ export interface Props {
   date: string;
   time?: string;
   location?: {
-    display: string;
+    name: string;
+    address: string;
     href: string;
   };
   description: string;
@@ -15,9 +16,10 @@ const { title, date, location, description } = Astro.props;
 
 <p class="date">{date}</p>
 <h4>{title}</h4>
-<a href={location?.href} target="_blank" rel="noopener noreferrer"
-  >{location?.display}</a
->
+<h5>{location?.name}</h5>
+<a href={location?.href} target="_blank" rel="noopener noreferrer">
+  {location?.address}
+</a>
 <p>{description}</p>
 <style>
   h4 {
