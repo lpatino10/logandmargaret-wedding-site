@@ -3,15 +3,8 @@ import Layout from "../layouts/TabPage.astro";
 
 import large from "../images/margaret-logan-proposal-large.jpg?url";
 import large2x from "../images/margaret-logan-proposal-large@2x.jpg?url";
-import large3x from "../images/margaret-logan-proposal-large@3x.jpg?url";
-
 import medium from "../images/margaret-logan-proposal-medium.jpg?url";
-import medium2x from "../images/margaret-logan-proposal-medium@2x.jpg?url";
-import medium3x from "../images/margaret-logan-proposal-medium@3x.jpg?url";
-
 import small from "../images/margaret-logan-proposal-small.jpg?url";
-import small2x from "../images/margaret-logan-proposal-small@2x.jpg?url";
-import small3x from "../images/margaret-logan-proposal-small@3x.jpg?url";
 ---
 
 <Layout
@@ -21,22 +14,22 @@ import small3x from "../images/margaret-logan-proposal-small@3x.jpg?url";
 	<picture>
 		<source
 			media="(min-width: 800px)"
-			srcset={`${large} 800w, ${large2x} 1600w, ${large3x} 2400w`}
-			height="1176"
-			width="2400"
+			srcset={`${large} 800w, ${large2x} 1600w`}
+			height="1568"
+			width="3200"
 		/>
 		<source
 			media="(min-width: 440px)"
-			srcset={`${medium} 633w, ${medium2x} 1266w, ${medium3x} 1900w`}
-			height="1602"
-			width="1900"
+			srcset={medium}
+			height="2030"
+			width="2400"
 		/>
-		<source
-			srcset={`${small}, ${small2x} 880w, ${small3x} 1320w`}
-			height="1893"
-			width="1320"
+		<img
+			src={small}
+			alt="Margaret and Logan's proposal"
+			height="2696"
+			width="1800"
 		/>
-		<img src={large3x} alt="Margaret and Logan's proposal" />
 	</picture>
 	<div class="text-container">
 		<h3>April 20, 2024</h3>
