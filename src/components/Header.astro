@@ -78,9 +78,7 @@ import HeaderLink from "./HeaderLink.astro";
 			}
 		});
 	};
-	const observer = new IntersectionObserver(toggleVisibility, {
-		rootMargin: "32px",
-	});
+	const observer = new IntersectionObserver(toggleVisibility);
 
 	const mainTitle = document.querySelector("h1");
 	if (mainTitle) {
