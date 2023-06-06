@@ -1,4 +1,6 @@
 ---
+import { Image } from "@astrojs/image/components";
+
 export interface Props {
   title: string;
   date: string;
@@ -16,10 +18,18 @@ const { title, date, location, description } = Astro.props;
 
 <p class="date">{date}</p>
 <h3>{title}</h3>
-<h4>{location?.name}</h4>
-<a href={location?.href} target="_blank" rel="noopener noreferrer">
-  {location?.address}
-</a>
+{
+  location && (
+    <>
+      <h4>{location?.name}</h4>
+      <a href={location?.href} target="_blank" rel="noopener noreferrer">
+        {location?.address}
+      </a>
+      <br />
+    </>
+  )
+}
+<!-- <Image src={icon} alt="cheers!" height={100} width={100} /> -->
 <p>{description}</p>
 <style>
   h4 {
