@@ -46,12 +46,12 @@ const { title, date, location, icon, description, side } = Astro.props;
 
   .block {
     padding-bottom: 10rem;
-    padding-left: 1rem;
     width: 50%;
   }
 
   .left {
     border-right: 1px solid var(--light-green);
+    padding-right: 1rem;
     position: relative;
   }
 
@@ -69,6 +69,7 @@ const { title, date, location, icon, description, side } = Astro.props;
 
   .right {
     border-left: 1px solid var(--light-green);
+    padding-left: 1rem;
     text-align: end;
   }
 </style>
