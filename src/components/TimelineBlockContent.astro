@@ -10,14 +10,19 @@ export interface Props {
     address: string;
     href: string;
   };
+  icon: {
+    src: string;
+    alt: string;
+  }
   description: string;
 }
 
-const { title, date, location, description } = Astro.props;
+const { title, date, location, icon, description } = Astro.props;
 ---
 
 <p class="date">{date}</p>
 <h3>{title}</h3>
+<Image src={icon.src} alt={icon.alt} height={120} width={120} />
 {
   location && (
     <>
@@ -25,14 +30,13 @@ const { title, date, location, description } = Astro.props;
       <a href={location?.href} target="_blank" rel="noopener noreferrer">
         {location?.address}
       </a>
-      <br />
     </>
   )
 }
-<!-- <Image src={icon} alt="cheers!" height={100} width={100} /> -->
 <p>{description}</p>
 <style>
   h4 {
+    margin-bottom: 1rem;
     margin-top: 1rem;
   }
 

@@ -1,7 +1,8 @@
 ---
-import TimelineEntry, { Props as EntryProps } from "./TimelineEntry.astro";
+import TimelineEntry from "./TimelineEntry.astro";
+import { Props as BlockContentProps } from "./TimelineBlockContent.astro";
 
-type Entry = Pick<EntryProps, "title" | "date" | "time" | "description">;
+type Entry = BlockContentProps;
 interface Props {
   entries: Entry[];
 }

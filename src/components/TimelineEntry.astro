@@ -3,33 +3,35 @@ import TimelineBlockContent, {
   Props as BlockContentProps,
 } from "./TimelineBlockContent.astro";
 
-export type Props = BlockContentProps & {
+type Props = BlockContentProps & {
   side: "left" | "right";
 };
 
-const { title, date, location, description, side } = Astro.props;
+const { title, date, location, icon, description, side } = Astro.props;
 ---
 
 <div class="timeline-entry">
-  <div class="left-block">
+  <div class="block left">
     {
       side === "left" && (
         <TimelineBlockContent
           title={title}
           date={date}
           location={location}
+          icon={icon}
           description={description}
         />
       )
     }
   </div>
-  <div class="right-block">
+  <div class="block right">
     {
       side === "right" && (
         <TimelineBlockContent
           title={title}
           date={date}
           location={location}
+          icon={icon}
           description={description}
         />
       )
@@ -42,15 +44,18 @@ const { title, date, location, description, side } = Astro.props;
     width: 100%;
   }
 
-  .left-block {
-    border-right: 1px solid var(--light-green);
+  .block {
     padding-bottom: 10rem;
-    padding-right: 1rem;
-    position: relative;
+    padding-left: 1rem;
     width: 50%;
   }
 
-  .left-block::after {
+  .left {
+    border-right: 1px solid var(--light-green);
+    position: relative;
+  }
+
+  .left::after {
     background-color: var(--coral);
     border: 2px solid var(--light-green);
     border-radius: 99px;
@@ -62,11 +67,8 @@ const { title, date, location, description, side } = Astro.props;
     width: 10px;
   }
 
-  .right-block {
+  .right {
     border-left: 1px solid var(--light-green);
-    padding-bottom: 10rem;
-    padding-left: 1rem;
     text-align: end;
-    width: 50%;
   }
 </style>

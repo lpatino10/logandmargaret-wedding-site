@@ -2,15 +2,27 @@
 import Layout from "../layouts/TabPage.astro";
 import Timeline from "../components/Timeline.astro";
 
+import cheers from "../images/cheers.png?url";
+import beach from "../images/beach.png?url";
+import weddingRings from "../images/wedding-rings.png?url";
+
 const entries = [
   {
     title: "Welcome Party",
     date: "Thursday, April 18th",
+    icon: {
+      src: cheers,
+      alt: "cheers!",
+    },
     description: "Details to Follow!",
   },
   {
     title: "Daytime Group Activity",
     date: "Friday, April 19th",
+    icon: {
+      src: beach,
+      alt: "beach day?",
+    },
     description: "Details to Follow!",
   },
   {
@@ -20,6 +32,10 @@ const entries = [
       name: "Casa Córdoba Estrella",
       address: "Calle 36 #4-27, Cartagena, Colombia",
       href: "https://goo.gl/maps/pgbzWGPA17nfVabK9",
+    },
+    icon: {
+      src: weddingRings,
+      alt: "<3",
     },
     description: "The big day!!",
   },
