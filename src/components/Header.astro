@@ -86,19 +86,22 @@ import HeaderLink from "./HeaderLink.astro";
 	}
 </script>
 <script>
+	const bodyEl = document.querySelector("body");
 	const menuButton = document.querySelector("#menu-button");
 	const menuShade = document.querySelector(".menu-shade");
 	const closeButton = document.querySelector("#close-button");
 
-	if (menuButton && menuShade) {
+	if (bodyEl && menuButton && menuShade) {
 		menuButton.addEventListener("click", () => {
 			(menuShade as HTMLDivElement).style.height = "100vh";
+			bodyEl.style.overflow = "hidden";
 		});
 	}
 
-	if (closeButton && menuShade) {
+	if (bodyEl && closeButton && menuShade) {
 		closeButton.addEventListener("click", () => {
 			(menuShade as HTMLDivElement).style.height = "0";
+			bodyEl.style.overflow = "initial";
 		});
 	}
 </script>
@@ -163,18 +166,26 @@ import HeaderLink from "./HeaderLink.astro";
 	.menu-shade {
 		background-color: var(--coral);
 		height: 0;
-		overflow: hidden;
+		overflow: scroll;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 1000;
 		transition: height 0.5s;
+
+		-ms-overflow-style: none;
+  	scrollbar-width: none;
+	}
+
+	.menu-shade::-webkit-scrollbar {
+		display: none;
 	}
 
 	.shade-links {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+		padding-bottom: 4rem;
 		padding-top: 4rem;
 		text-align: center;
 	}
