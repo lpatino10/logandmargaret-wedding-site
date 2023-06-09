@@ -26,6 +26,10 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 		text-decoration: none;
 	}
 
+	a:visited {
+		color: var(--dark-red);
+	}
+
 	a.underline::after {
 		content: "";
 		display: block;

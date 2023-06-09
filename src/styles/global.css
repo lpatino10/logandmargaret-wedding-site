@@ -65,6 +65,14 @@ p {
 	font-size: 1rem;
 }
 
+a {
+	color: var(--dark-green);
+}
+
+a:visited {
+	color: var(--light-green);
+}
+
 input {
 	font-size: 16px;
 }
