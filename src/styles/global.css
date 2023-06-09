@@ -19,18 +19,18 @@
 	--dark-orange: #E05619;
 	--light-green: #637F17;
 	--dark-green: #264C09;
-	--dark-coral: #F8B08C;
 	--coral: #FFD7C4;
+	--pink: #FFE0D1;
 }
 
 body {
 	margin: auto;
 	text-align: left;
-	background-color: var(--coral);
+	background-color: var(--pink);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: var(--dark-green);
+	color: var(--dark-red);
 }
 
 h1 {
@@ -94,7 +94,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid var(--dark-green);
+	border-top: 1px solid var(--light-green);
 	margin: 1em 0;
 	padding: 0;
 }
