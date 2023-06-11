@@ -93,7 +93,7 @@ import HeaderLink from "./HeaderLink.astro";
 
 	if (bodyEl && menuButton && menuShade) {
 		menuButton.addEventListener("click", () => {
-			(menuShade as HTMLDivElement).style.height = "100vh";
+			(menuShade as HTMLDivElement).style.height = "100%";
 			bodyEl.style.overflow = "hidden";
 		});
 	}
