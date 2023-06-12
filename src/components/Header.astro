@@ -93,7 +93,7 @@ import HeaderLink from "./HeaderLink.astro";
 
 	if (bodyEl && menuButton && menuShade) {
 		menuButton.addEventListener("click", () => {
-			(menuShade as HTMLDivElement).style.height = "100%";
+			(menuShade as HTMLDivElement).style.height = "100vh";
 			bodyEl.style.overflow = "hidden";
 		});
 	}
@@ -166,7 +166,7 @@ import HeaderLink from "./HeaderLink.astro";
 	.menu-shade {
 		background-image: url("../images/transparent-bg.png");
 		background-attachment: fixed;
-		background-size: cover;
+		background-size: contain;
 		background-position: center;
 
 		height: 0;
