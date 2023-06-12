@@ -1,5 +1,36 @@
 ---
+import { Image } from "@astrojs/image/components";
 import Layout from "../layouts/TabPage.astro";
+
+import oldCityMap from "../images/cartagena-old-city.jpeg";
 ---
 
-<Layout title="Travel" description="Info about getting to the wedding" />
+<Layout title="Travel" description="Info about getting to the wedding">
+  <div class="text-container">
+    <h3>Paperwork</h3>
+    <p>First thing's first: make sure you have your papers ready. American guests will need to have valid passports to get in, which can take ~2-3 months to get. Others might need visas to get in to Colombia, so please check on this ASAP!</p>
+    <p>There's no longer any requirements around COVID vaccinations or testing, but we'll keep this website updated if anything changes.</p>
+    <h3>Flights</h3>
+    <p>Cartagena's airport is the Rafael Núñez International airport. You can find direct flights depending on where you're coming from, but a lot of them will involve a layover in Miami or a bigger Colombian city like Medellín or Bogotá.</p>
+    <p>Spirit Airlines typically has the cheapest flights there, but you'll need to check their website to see when they're available. Their flights are usually only available about 6 months ahead of departure.</p>
+    <p>Once you land in Cartagena, transport to the old city is quick. The easiest way will be to take a taxi from the airport, which will run you about 15,000 - 20,000 Colombian Pesos (~$5). The old city itself is very small and walkable so no need to rent a car.</p>
+    <h3>Hotels</h3>
+    <p>There are lots of hotel and Airbnb options in the old city: </p>
+    <div class="image-wrapper">
+      <Image src={oldCityMap} alt="Map of Cartagena's old city" />
+    </div>
+    <p>One of the great things is that the old city is only about a 15 minute walk from end to end, and the venue is pretty centrally-located, so you'll never be too far. That being said, here are some recommendations:</p>
+    <h4>Sofitel Legend Santa Clara Cartagena</h4>
+    <p>One option if you're feeling fancy is the <a href="https://www.sofitellegendsantaclara.com/" target="_blank" rel="noopener noreferrer">Sofitel Legend Santa Clara</a>. It's gorgeous and just an 8 minute walk to the venue.</p>
+  </div>
+</Layout>  
+<style>
+  h3 {
+    align-self: center;
+  }
+
+  .image-wrapper {
+    align-self: center;
+    max-width: 500px;
+  }
+</style>
