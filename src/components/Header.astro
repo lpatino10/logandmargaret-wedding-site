@@ -12,7 +12,7 @@ import HeaderLink from "./HeaderLink.astro";
 			<HeaderLink withUnderline href="/">Home</HeaderLink>
 			<HeaderLink withUnderline href="/our-story">Our Story</HeaderLink>
 			<HeaderLink withUnderline href="/schedule">Schedule</HeaderLink>
-			<!-- <HeaderLink href="/travel">Travel</HeaderLink> -->
+			<HeaderLink withUnderline href="/travel">Travel</HeaderLink>
 			<HeaderLink withUnderline href="/faqs">FAQs</HeaderLink>
 			<!-- <HeaderLink href="/wedding-party">Wedding Party</HeaderLink> -->
 			<HeaderLink withUnderline href="/registry">Registry</HeaderLink>
@@ -53,7 +53,7 @@ import HeaderLink from "./HeaderLink.astro";
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/our-story">Our Story</HeaderLink>
 		<HeaderLink href="/schedule">Schedule</HeaderLink>
-		<!-- <HeaderLink href="/travel">Travel</HeaderLink> -->
+		<HeaderLink href="/travel">Travel</HeaderLink>
 		<HeaderLink href="/faqs">FAQs</HeaderLink>
 		<!-- <HeaderLink href="/wedding-party">Wedding Party</HeaderLink> -->
 		<HeaderLink href="/registry">Registry</HeaderLink>
@@ -166,8 +166,9 @@ import HeaderLink from "./HeaderLink.astro";
 	.menu-shade {
 		background-image: url("../images/transparent-bg.png");
 		background-attachment: fixed;
-		background-size: contain;
+		background-repeat: no-repeat;
 		background-position: center;
+		background-size: cover;
 
 		height: 0;
 		overflow: scroll;
