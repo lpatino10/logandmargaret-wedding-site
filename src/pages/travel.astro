@@ -2,35 +2,128 @@
 import { Image } from "@astrojs/image/components";
 import Layout from "../layouts/TabPage.astro";
 
-import oldCityMap from "../images/cartagena-old-city.jpeg";
+import oldCityMap from "../images/cartagena-old-city.png";
 ---
 
 <Layout title="Travel" description="Info about getting to the wedding">
   <div class="text-container">
     <h3>Paperwork</h3>
-    <p>First thing's first: make sure you have your papers ready. American guests will need to have valid passports to get in, which can take ~2-3 months to get. Others might need visas to get in to Colombia, so please check on this ASAP!</p>
-    <p>There's no longer any requirements around COVID vaccinations or testing, but we'll keep this website updated if anything changes.</p>
+    <p>
+      Guests will need to have valid passports to enter Colombia, which can take
+      ~3 months to get in the US. Some airlines require that your passport be
+      valid at least 6 months beyond the dates of your trip. Guests from other
+      countries might need a visa, so please check on this ASAP! In addition to
+      a valid passport, you will need to fill out Colombia's version of a
+      <a
+        href="https://www.colombia-checkmig.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        health declaration form
+      </a> within 24 hours of your arrival.
+    </p>
+    <p>
+      There are no longer any requirements around COVID vaccinations or testing,
+      but we'll keep this website updated if anything changes.
+    </p>
     <h3>Flights</h3>
-    <p>Cartagena's airport is the Rafael Núñez International airport. You can find direct flights depending on where you're coming from, but a lot of them will involve a layover in Miami or a bigger Colombian city like Medellín or Bogotá.</p>
-    <p>Spirit Airlines typically has the cheapest flights there, but you'll need to check their website to see when they're available. Their flights are usually only available about 6 months ahead of departure.</p>
-    <p>Once you land in Cartagena, transport to the old city is quick. The easiest way will be to take a taxi from the airport, which will run you about 15,000 - 20,000 Colombian Pesos (~$5). The old city itself is very small and walkable so no need to rent a car.</p>
-    <h3>Hotels</h3>
-    <p>There are lots of hotel and Airbnb options in the old city: </p>
+    <p>
+      Cartagena's airport is the Rafael Núñez International airport (airport
+      code: CTG). You can find direct flights depending on where you're coming
+      from, but a lot of them will involve a layover in Miami or a bigger
+      Colombian city like Medellín or Bogotá.
+    </p>
+    <p>
+      Spirit Airlines typically has the cheapest flights there. Their flights
+      are usually only available about 6 months ahead of departure.
+    </p>
+    <h3>Transportation</h3>
+    <p>
+      Once you land in Cartagena, transport to the old city (highlighted below) is quick. The
+      easiest way will be to take a taxi from the airport, which will run you
+      about 15,000 - 20,000 Colombian Pesos (~$5). The old city itself is very
+      small and walkable so no need to rent a car.
+    </p>
     <div class="image-wrapper">
       <Image src={oldCityMap} alt="Map of Cartagena's old city" />
     </div>
-    <p>One of the great things is that the old city is only about a 15 minute walk from end to end, and the venue is pretty centrally-located, so you'll never be too far. That being said, here are some recommendations:</p>
-    <h4>Sofitel Legend Santa Clara Cartagena</h4>
-    <p>One option if you're feeling fancy is the <a href="https://www.sofitellegendsantaclara.com/" target="_blank" rel="noopener noreferrer">Sofitel Legend Santa Clara</a>. It's gorgeous and just an 8 minute walk to the venue.</p>
+    <h3>Hotels</h3>
+    <p>
+      There are lots of hotel options in the old city, which is only about a 15
+      minute walk from end to end. The venue is pretty centrally located, so
+      you'll never be too far. Here are some recommendations:
+    </p>
+    <div class="hotel-recommendations">
+      <h4>Sofitel Legend Santa Clara Cartagena</h4>
+      <a
+        class="website-link"
+        href="https://www.sofitellegendsantaclara.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://www.sofitellegendsantaclara.com
+      </a>
+      <p>
+        This is a great option if you're feeling fancy. It's gorgeous and just
+        an 8 minute walk to the venue.
+      </p>
+      <h4>Hotel Bantu by Faranda Boutique, a member of Radisson Individuals</h4>
+      <a
+        class="website-link"
+        href="https://www.radissonhotelsamericas.com/en-us/hotels/radisson-individuals-bantu"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://www.radissonhotelsamericas.com/en-us/hotels/radisson-individuals-bantu
+      </a>
+      <p>
+        Very pretty colonial building right in the middle of the old city and
+        just 6 minutes away from the venue on foot.
+      </p>
+      <h4>Hotel Casona Del Colegio</h4>
+      <a
+        class="website-link"
+        href="https://www.casonadelcolegio.com/en/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://www.casonadelcolegio.com/en/
+      </a>
+      <p>
+        Another boutique hotel that's very central and just 3 minutes away from
+        the venue!
+      </p>
+    </div>
+    <h3>Airbnb</h3>
+    <p>
+      The most cost-efficient options are available through Airbnb, which is
+      great for staying in groups. Please reach out to us if you'd like help in
+      organizing a group to stay with!
+    </p>
   </div>
-</Layout>  
+</Layout>
 <style>
   h3 {
     align-self: center;
   }
 
+  .hotel-recommendations {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 60ch;
+    text-align: center;
+  }
+
   .image-wrapper {
     align-self: center;
-    max-width: 500px;
+    max-width: 700px;
+  }
+
+  .website-link {
+    align-self: center;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    margin-top: -1.75rem;
   }
 </style>
