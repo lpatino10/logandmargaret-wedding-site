@@ -6,8 +6,12 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://logandmargaret-wedding-site.vercel.app/',
-  integrations: [mdx(), sitemap(), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
-  })]
+  site: "https://margaretandlogan.love",
+  integrations: [
+    mdx(),
+    sitemap(),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+  ],
 });
