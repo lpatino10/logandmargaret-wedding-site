@@ -3,6 +3,7 @@ import i18next from "i18next";
 
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
+import LanguagePicker from "../components/LanguagePicker.astro";
 
 const { title, description } = Astro.props;
 ---
@@ -32,7 +33,11 @@ const { title, description } = Astro.props;
 		<main>
 			<slot />
 		</main>
-		<div class="image-footer"></div>
+		<div class="image-footer">
+			<div class="picker-wrapper">
+				<LanguagePicker />
+			</div>
+		</div>
 
 		<style>
 			body {
@@ -52,14 +57,29 @@ const { title, description } = Astro.props;
 			main {
 				flex: 1;
 			}
+
 			.image-footer {
+				align-items: flex-end;
 				background-image: url("../images/bird-of-paradise.png");
 				background-position: bottom -100px right -95px;
 				background-repeat: no-repeat;
 				background-attachment: scroll;
 				background-size: 350px;
+				display: flex;
 				height: 300px;
 				width: 100%;
+			}
+
+			.picker-wrapper {
+				display: none;
+				margin-bottom: 20px;
+				margin-left: 20px;
+			}
+
+			@media (min-width: 1200px) {
+				.picker-wrapper {
+					display: unset;
+				}
 			}
 		</style>
 	</body>
