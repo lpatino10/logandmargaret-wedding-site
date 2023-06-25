@@ -14,11 +14,11 @@ if (newTab) {
 }
 ---
 
-<a href={href} {...extraAttributes}>
+<a class="button-link" href={href} {...extraAttributes}>
   {label}
 </a>
 <style>
-  a {
+  .button-link {
     background-color: var(--dark-green);
     border-radius: 8px;
     color: white;
@@ -28,11 +28,11 @@ if (newTab) {
     transition: background-color 0.2s;
   }
 
-  a:visited {
+  .button-link:visited {
     color: white;
   }
 
-  a:hover {
+  .button-link:hover {
     background-color: var(--light-green);
   }
 </style>
