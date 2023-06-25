@@ -1,0 +1,67 @@
+{
+  "index": {
+    "date": "April 20, 2024",
+    "and": "in",
+    "greeting": "We're so excited to be able to share this day and this trip to such a beautiful place with our closest friends and family. We hope to see you all there!"
+  },
+  "pages": {
+    "home": "Home",
+    "story": "Our Story",
+    "schedule": "Schedule",
+    "travel": "Travel",
+    "faq": "FAQs",
+    "registry": "Registry",
+    "rsvp": "RSVP"
+  },
+  "story": {
+    "meetingTitle": "Modern Love",
+    "meetingBody": "Logan moved from Ohio into Margaret's apartment in Boston! Lucky for us, their third roommate, Michael, found Logan on Reddit. They were roommates for 6 months, and it didn't take long for there to be a connection (at which point Margaret promptly told Logan he had to move out so they could date).",
+    "hobbiesTitle": "Fun in the Sun (and Snow)",
+    "hobbiesBody": "Both of them love sports and the outdoors, so they've always been big parts of their relationship. Logan knew he met his match when Margaret bested him in soccer volleyball soon after they met. Logan joined and made a big impact on their <0>league-winning</0> soccer team (\"The Soccer Team\"), which they still play together on, five years later. Margaret showed her commitment to Logan by slogging through many a bunny hill to share her ski knowledge with a boy from Ohio. They knew they were a good match when they consistently picked out overly-intense hikes to do together whenever they got the chance.",
+    "germanyBody": "Another shared passion of theirs is traveling, and in 2021 they got the opportunity to live in Cologne, Germany for a year as part of Margaret's PhD program. It was an amazing chance to travel all over Europe, to learn German (only Logan), and experience life through a new lens together. The lessons they learned from moving to a new country together during the pandemic helped build a strong foundation for their relationship.",
+    "proposalTitle": "The Proposal",
+    "proposalBody": "On a sunny April day, they took a walk to the Arboretum. Logan knew Margaret would love any chance to hang out with some trees. There was a spot amongst the pines picked out with their friends Emma and Freddy waiting in the bushes to take pictures. They both blacked out, but she said yes, and they got to celebrate at night over pisco sours with a bunch of their closest friends. The rest is history!"
+  },
+  "schedule": {
+    "welcomePartyTitle": "Welcome Party",
+    "welcomePartyDate": "Thursday, April 18th",
+    "welcomePartyDescription": "Details to Follow!",
+    "activityTitle": "Daytime Group Activity",
+    "activityDate": "Friday, April 19th",
+    "activityDescription": "Details to Follow!",
+    "weddingTitle": "Wedding Day",
+    "weddingDate": "Saturday, April 20th",
+    "weddingDescription": "Dress code: ~Tropical Cocktail~ (see FAQ page for more info)"
+  },
+  "travel": {
+    "flightsTitle": "Flights",
+    "flightsBody1": "Cartagena's airport is the Rafael Núñez International airport (airport code: CTG). You can find direct flights depending on where you're coming from, but a lot of them will involve a layover in Miami or a bigger Colombian city like Medellín or Bogotá.",
+    "flightsBody2": "Spirit Airlines typically has the cheapest flights there. Their flights are usually only available about 6 months ahead of departure.",
+    "hotelsTitle": "Hotels",
+    "hotelsDescription": "There are lots of hotel options in the old city, which is only about a 15 minute walk from end to end. The venue is pretty centrally located, so you'll never be too far. Here are some recommendations:",
+    "santaClaraLink": "https://www.sofitellegendsantaclara.com",
+    "santaClaraDescription": "This is a great option if you're feeling fancy. It's gorgeous and just an 8 minute walk to the venue.",
+    "bantuLink": "https://www.radissonhotelsamericas.com/en-us/hotels/radisson-individuals-bantu",
+    "bantuDescription": "Very pretty colonial building right in the middle of the old city and just 6 minutes away from the venue on foot.",
+    "casonaLink": "https://www.casonadelcolegio.com/en/",
+    "casonaDescription": "Another boutique hotel that's very central and just 3 minutes away from the venue!",
+    "airbnbDescription": "The most cost-efficient options are available through Airbnb, which is great for staying in groups. Please reach out to us if you'd like help in organizing a group to stay with!"
+  },
+  "faq": {
+    "packingTitle": "What should I pack?",
+    "packingBody": "Cartagena is tropical, colorful, and casual, so think breathable summer outfits! Some areas have cobblestone streets, so comfortable walking shoes are recommended. Within the walled city are many options for purchasing hats, swimsuits, sunglasses, and anything else you may have forgotten.",
+    "dressCodeTitle": "What does \"Tropical Cocktail\" mean?",
+    "dressCodeBodyDresses": "For dresses: elegant dresses in any length. Have fun with color and print! Remember to choose something breathable, and please no black. We think the pictures will look nice with more color. Avoid thin heels due to cobblestone streets!",
+    "dressCodeBodySuits": "Alternatively, linen suits or pants with a button-down or Guayabera shirt."
+  },
+  "registry": {
+    "title": "Thank you",
+    "body": "Your presence on the big day is the most important thing to us, but we appreciate any additional support!",
+    "buttonLabel": "View registry"
+  },
+  "rsvp": {
+    "title": "Coming soon",
+    "body1": "If you're planning on attending, we're very excited to see you! Check back here later on for a formal RSVP once we finalize the schedule.",
+    "body2": "We undersand that traveling this far is an undertaking. While we would miss you greatly, if you know you cannot attend, please let us know as soon as possible."
+  }
+}

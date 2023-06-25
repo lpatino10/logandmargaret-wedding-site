@@ -1,11 +1,13 @@
 ---
+import i18next from "i18next";
+
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 
 const { title, description } = Astro.props;
 ---
 
-<html lang="en">
+<html lang={i18next.language}>
 	<head>
 		<BaseHead title={title} description={description} />
 		<link
@@ -22,7 +24,7 @@ const { title, description } = Astro.props;
 			type="font/woff2"
 			crossorigin
 		/>
-		<meta name="robots" content="noindex">
+		<meta name="robots" content="noindex" />
 	</head>
 
 	<body>
@@ -31,33 +33,34 @@ const { title, description } = Astro.props;
 			<slot />
 		</main>
 		<div class="image-footer"></div>
+
+		<style>
+			body {
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+				margin: 0;
+				height: 100%;
+				text-align: left;
+				background-color: var(--pink);
+				word-wrap: break-word;
+				overflow-wrap: break-word;
+				line-height: 1.5;
+				color: var(--dark-red);
+			}
+
+			main {
+				flex: 1;
+			}
+			.image-footer {
+				background-image: url("../images/bird-of-paradise.png");
+				background-position: bottom -100px right -95px;
+				background-repeat: no-repeat;
+				background-attachment: scroll;
+				background-size: 350px;
+				height: 300px;
+				width: 100%;
+			}
+		</style>
 	</body>
 </html>
-<style>
-	body {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-		margin: 0;
-		height: 100%;
-		text-align: left;
-		background-color: var(--pink);
-		word-wrap: break-word;
-		overflow-wrap: break-word;
-		line-height: 1.5;
-		color: var(--dark-red);
-	}
-
-	main {
-		flex: 1;
-	}
-	.image-footer {
-		background-image: url("../images/bird-of-paradise.png");
-		background-position: bottom -100px right -95px;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-size: 350px;
-		height: 300px;
-		width: 100%;
-	}
-</style>

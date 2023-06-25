@@ -1,4 +1,7 @@
 ---
+import { t } from "i18next";
+import { localizePath } from "astro-i18next";
+
 import HeaderLink from "./HeaderLink.astro";
 ---
 
@@ -9,15 +12,29 @@ import HeaderLink from "./HeaderLink.astro";
 		</h1>
 		<nav>
 			<h4 class="initials small-nav-title hide">M & L</h4>
-			<HeaderLink withUnderline href="/">Home</HeaderLink>
-			<HeaderLink withUnderline href="/our-story">Our Story</HeaderLink>
-			<HeaderLink withUnderline href="/schedule">Schedule</HeaderLink>
-			<HeaderLink withUnderline href="/travel">Travel</HeaderLink>
-			<HeaderLink withUnderline href="/faqs">FAQs</HeaderLink>
+			<HeaderLink withUnderline href={localizePath("/")}>
+				{t("pages.home")}
+			</HeaderLink>
+			<HeaderLink withUnderline href={localizePath("/our-story")}>
+				{t("pages.story")}
+			</HeaderLink>
+			<HeaderLink withUnderline href={localizePath("/schedule")}>
+				{t("pages.schedule")}
+			</HeaderLink>
+			<HeaderLink withUnderline href={localizePath("/travel")}>
+				{t("pages.travel")}
+			</HeaderLink>
+			<HeaderLink withUnderline href={localizePath("/faqs")}>
+				{t("pages.faq")}
+			</HeaderLink>
 			<!-- <HeaderLink href="/wedding-party">Wedding Party</HeaderLink> -->
-			<HeaderLink withUnderline href="/registry">Registry</HeaderLink>
+			<HeaderLink withUnderline href={localizePath("/registry")}>
+				{t("pages.registry")}
+			</HeaderLink>
 			<!-- <HeaderLink href="/things-to-do">Things To Do</HeaderLink> -->
-			<HeaderLink withUnderline href="/rsvp">RSVP</HeaderLink>
+			<HeaderLink withUnderline href={localizePath("/rsvp")}>
+				{t("pages.rsvp")}
+			</HeaderLink>
 		</nav>
 	</div>
 	<div id="small-header" class="header-wrapper">
@@ -51,15 +68,23 @@ import HeaderLink from "./HeaderLink.astro";
 			</path>
 		</svg>
 		<div class="shade-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/our-story">Our Story</HeaderLink>
-			<HeaderLink href="/schedule">Schedule</HeaderLink>
-			<HeaderLink href="/travel">Travel</HeaderLink>
-			<HeaderLink href="/faqs">FAQs</HeaderLink>
+			<HeaderLink href={localizePath("/")}>{t("pages.home")}</HeaderLink>
+			<HeaderLink href={localizePath("/our-story")}>
+				{t("pages.story")}
+			</HeaderLink>
+			<HeaderLink href={localizePath("/schedule")}>
+				{t("pages.schedule")}
+			</HeaderLink>
+			<HeaderLink href={localizePath("/travel")}>
+				{t("pages.travel")}
+			</HeaderLink>
+			<HeaderLink href={localizePath("/faqs")}>{t("pages.faq")}</HeaderLink>
 			<!-- <HeaderLink href="/wedding-party">Wedding Party</HeaderLink> -->
-			<HeaderLink href="/registry">Registry</HeaderLink>
+			<HeaderLink href={localizePath("/registry")}>
+				{t("pages.registry")}
+			</HeaderLink>
 			<!-- <HeaderLink href="/things-to-do">Things To Do</HeaderLink> -->
-			<HeaderLink href="/rsvp">RSVP</HeaderLink>
+			<HeaderLink href={localizePath("/rsvp")}>{t("pages.rsvp")}</HeaderLink>
 		</div>
 	</div>
 </div>
@@ -125,7 +150,7 @@ import HeaderLink from "./HeaderLink.astro";
 	}
 
 	nav a {
-		margin-right: 1.25rem;
+		margin-right: 1.5rem;
 	}
 
 	svg {
@@ -188,7 +213,7 @@ import HeaderLink from "./HeaderLink.astro";
 		transition: height 0.5s;
 
 		-ms-overflow-style: none;
-  	scrollbar-width: none;
+		scrollbar-width: none;
 	}
 
 	.menu-shade::-webkit-scrollbar {

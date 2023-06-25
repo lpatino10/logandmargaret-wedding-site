@@ -1,0 +1,67 @@
+{
+  "index": {
+    "date": "20 de abril de 2024",
+    "and": "en",
+    "greeting": "Estamos tan emocionados de poder compartir este día y este viaje a un lugar tan bonito con nuestra familia y amigos más cercanos. ¡Esperamos verlos a todos allí!"
+  },
+  "pages": {
+    "home": "Inicio",
+    "story": "Nuestra Historia",
+    "schedule": "Horario",
+    "travel": "Viaje",
+    "faq": "Preguntas Frecuentes",
+    "registry": "Registro",
+    "rsvp": "R.S.V.P."
+  },
+  "story": {
+    "meetingTitle": "Amor Moderno",
+    "meetingBody": "¡Logan se mudó de Ohio al apartamento de Margaret en Boston! Por suerte su tercer compañero de cuarto, Michael, encontró a Logan en Reddit. Fueron compañeros de cuarto durante 6 meses, y no tardó mucho en haber una conexión (en cuyo momento Margaret le dijo a Logan que tenía que mudarse otra vez para que pudiéran ser novios).",
+    "hobbiesTitle": "Diversión en Cualquier Estación",
+    "hobbiesBody": "A los dos les encantan los deportes y la naturaleza, así que siempre han sido partes importantes de su relación. Logan supo que había encontrado su pareja cuando Margaret le ganó en un partido de futvóley poco después de conocerse. Logan se incorporó y tuvo un gran impacto en su equipo de fútbol <0>ganador de la liga</0> (\"The Soccer Team\"), en el que siguen jugando juntos 5 años después. Margaret mostró su compromiso con Logan esquiando las pistas más fáciles para compartir sus conocimientos de esquí con un chico de Ohio. Sabían que eran una buen pareja cuando consistentemente escogieron excursiones difíciles para hacer juntos.",
+    "germanyBody": "Otra de sus pasiones comunes es viajar, y en 2021 tuvieron la oportunidad de vivir en Colonia, Alemana durante un año como parte de la programa de doctorado de Margaret. Fue una experiencia increíble poder viajar por toda Europa, aprender alemán (solo Logan), y vivir juntos una vida totalmente diferente. Las lecciones que aprendieron al transladarse a un país nuevo durante la pandemia les ayudaron a construir unos cimientos sólidos para su relación.",
+    "proposalTitle": "La Propuesta",
+    "proposalBody": "En un soleado día de abril, caminaron al arboreto cerca de su apartamento. Logan sabía que a Margaret le encantaría cualquier oportunidad de estar entre los árboles. Había un sitio escogido entre los pinos donde estaban esperando sus amigos Emma y Freddy para tomar fotos. Los dos se desmayaron, pero ella dijo que sí, y celebraron esa noche con pisco sours y amigos cercanos. ¡El resto es historia!"
+  },
+  "schedule": {
+    "welcomePartyTitle": "Cóctel de Bienvenida",
+    "welcomePartyDate": "jueves, el 18 de abril",
+    "welcomePartyDescription": "¡Detalles a seguir!",
+    "activityTitle": "Actividad Diurna de Grupo",
+    "activityDate": "viernes, el 19 de abril",
+    "activityDescription": "¡Detalles a seguir!",
+    "weddingTitle": "Día de Boda",
+    "weddingDate": "sábado, el 20 de abril",
+    "weddingDescription": "Código de vestimenta: ~Cóctel Tropical~ (consule la página de preguntas frecuentes para más información)"
+  },
+  "travel": {
+    "flightsTitle": "Vuelos",
+    "flightsBody1": "El aeropuerto de Cartagena es el Aeropuerto Rafael Núñez (código CTG).",
+    "flightsBody2": "Cuando atterices en Cartagena, es fácil llegar a la ciudad amurallada. La manera más facil es con taxi. La ciudad es muy pequeña y transitible, así que no es necesario alquilar un carro.",
+    "hotelsTitle": "Hoteles",
+    "hotelsDescription": "Hay muchas opciones hoteleras en la ciudad amurallada, que está a sólo unos 15 minutos a pie de punto a punto. El lugar de boda está situado al centro, entonces nunca serás demasiado lejos. Aquí están algunas recomendaciones:",
+    "santaClaraLink": "https://www.sofitellegendsantaclara.com/es/",
+    "santaClaraDescription": "Este es una buena opción si te sientes elegante. Es hermoso y está a sólo 8 minutos a pie del lugar de boda.",
+    "bantuLink": "https://www.radissonhotelsamericas.com/es-xl/hotels/radisson-individuals-bantu",
+    "bantuDescription": "Hermoso edificio colonial en el centro de la ciudad amurallada y a sólo 6 minutos a pie del lugar de boda.",
+    "casonaLink": "https://www.casonadelcolegio.com/es/",
+    "casonaDescription": "¡Otro hotel boutique que queda en el centro y está a sólo 3 minutos a pie del lugar de boda!",
+    "airbnbDescription": "Las opciones mas economicas están disponibles en Airbnb. Esta es una gran opción para grupos."
+  },
+  "faq": {
+    "packingTitle": "¿Qué tipo de ropa debo llevar?",
+    "packingBody": "Cartagena es un lugar tropical y llena de color, ¡así que piensa en ropa de verano transpirible! Algunas areas de la ciudad tienen calles empedradas, por lo que se recomienda llevar zapatos cómodos para caminar. Hay muchos lugares dentro de la ciudad amurallada para comprar gorros, trajes de baño, gafas de sol, o cualquier otra cosa que pueda haber olvidado.",
+    "dressCodeTitle": "¿Qué significa \"Cóctel Tropical\"?",
+    "dressCodeBodyDresses": "Para vestidos: vestidos elegantes de cualquier longitud. ¡Diviértete con el color y estampado! Recuerda elegir algo transpirible y por favor, no lleves nada negro. Creemos que las fotos quedarán mejor con más color. ¡Evitar los tacones finos por las calles empedradas!",
+    "dressCodeBodySuits": "Alternativamente, trajes de lino con camisa abotonada."
+  },
+  "registry": {
+    "title": "Gracias",
+    "body": "Lo más importante es tenerte allí en el gran día, ¡pero agradecemos cualquier apoyo adicional!",
+    "buttonLabel": "Ver registro"
+  },
+  "rsvp": {
+    "title": "Próximamente",
+    "body1": "Si piensas asistir, ¡estamos muy emocionados de verte! Vuelva más tarde para un R.S.V.P formal después de que finalizamos el horario.",
+    "body2": "Si no puedes asistir, te vamos a extrañar mucho. Por favor díganos lo antes posible para que podamos planificar en consecuencia."
+  }
+}

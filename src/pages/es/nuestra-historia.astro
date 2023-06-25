@@ -1,80 +1,78 @@
 ---
 import { changeLanguage, t } from "i18next";
 import { Trans } from "astro-i18next/components";
-import Layout from "../layouts/TabPage.astro";
-import PhotoGrid, {
-  Props as PhotoGridProps,
-} from "../components/PhotoGrid.astro";
-import couchThirdWheel from "../images/570-couch.jpg";
-import stoopLaughing from "../images/570-stoop-laugh.jpg";
-import firstDate from "../images/first-date.jpg";
-import soccerFriends from "../images/soccer-with-sousas.jpg";
-import snowmobile from "../images/snowmobile.jpg";
-import hikingAcadia from "../images/hiking-acadia.jpg";
-import amsterdam from "../images/amsterdam.jpg";
-import london from "../images/london.jpg";
-import dom from "../images/dom.jpg";
-import proposalStaring from "../images/proposal-stare.jpg";
-import proposalFlowers from "../images/proposal-flowers.jpg";
-import proposalLogKiss from "../images/proposal-log-kiss.jpg";
+import Layout from "../../layouts/TabPage.astro";
+import PhotoGrid, { Props as PhotoGridProps, } from "../../components/PhotoGrid.astro";
+import couchThirdWheel from "../../images/570-couch.jpg";
+import stoopLaughing from "../../images/570-stoop-laugh.jpg";
+import firstDate from "../../images/first-date.jpg";
+import soccerFriends from "../../images/soccer-with-sousas.jpg";
+import snowmobile from "../../images/snowmobile.jpg";
+import hikingAcadia from "../../images/hiking-acadia.jpg";
+import amsterdam from "../../images/amsterdam.jpg";
+import london from "../../images/london.jpg";
+import dom from "../../images/dom.jpg";
+import proposalStaring from "../../images/proposal-stare.jpg";
+import proposalFlowers from "../../images/proposal-flowers.jpg";
+import proposalLogKiss from "../../images/proposal-log-kiss.jpg";
 
-changeLanguage("en");
+changeLanguage("es");
 
 const firstSectionImages: PhotoGridProps["images"] = [
-  {
-    src: firstDate,
-    alt: "our first date",
-  },
-  {
-    src: couchThirdWheel,
-    alt: "Michael third-wheeling",
-  },
-  {
-    src: stoopLaughing,
-    alt: "candid",
-  },
+    {
+        src: firstDate,
+        alt: "our first date",
+    },
+    {
+        src: couchThirdWheel,
+        alt: "Michael third-wheeling",
+    },
+    {
+        src: stoopLaughing,
+        alt: "candid",
+    },
 ];
 const secondSectionImages: PhotoGridProps["images"] = [
-  {
-    src: soccerFriends,
-    alt: "champs again",
-  },
-  {
-    src: snowmobile,
-    alt: "before the ride of our lives",
-  },
-  {
-    src: hikingAcadia,
-    alt: "peaking in Acadia",
-  },
+    {
+        src: soccerFriends,
+        alt: "champs again",
+    },
+    {
+        src: snowmobile,
+        alt: "before the ride of our lives",
+    },
+    {
+        src: hikingAcadia,
+        alt: "peaking in Acadia",
+    },
 ];
 const thirdSectionImages: PhotoGridProps["images"] = [
-  {
-    src: dom,
-    alt: "big boi",
-  },
-  {
-    src: amsterdam,
-    alt: "biking around",
-  },
-  {
-    src: london,
-    alt: "walking around London",
-  },
+    {
+        src: dom,
+        alt: "big boi",
+    },
+    {
+        src: amsterdam,
+        alt: "biking around",
+    },
+    {
+        src: london,
+        alt: "walking around London",
+    },
 ];
 const fourthSectionImages: PhotoGridProps["images"] = [
-  {
-    src: proposalFlowers,
-    alt: "!!!",
-  },
-  {
-    src: proposalLogKiss,
-    alt: "!!!",
-  },
-  {
-    src: proposalStaring,
-    alt: "!!!",
-  },
+    {
+        src: proposalFlowers,
+        alt: "!!!",
+    },
+    {
+        src: proposalLogKiss,
+        alt: "!!!",
+    },
+    {
+        src: proposalStaring,
+        alt: "!!!",
+    },
 ];
 ---
 
