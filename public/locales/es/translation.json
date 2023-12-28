@@ -63,8 +63,6 @@
     "buttonLabel": "Ver registro"
   },
   "rsvp": {
-    "title": "Próximamente",
-    "body1": "Si piensas asistir, ¡estamos muy emocionados de verte! Vuelva más tarde para un R.S.V.P formal después de que finalizamos el horario.",
-    "body2": "Si no puedes asistir, te vamos a extrañar mucho. Por favor díganos lo antes posible para que podamos planificar en consecuencia."
+    "body": "El link con el R.S.V.P formal se puede encontrar en la invitación de Paperless Post. ¡Por favor díganos si tienes preguntas!"
   }
 }
