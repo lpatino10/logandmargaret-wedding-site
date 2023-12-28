@@ -7,7 +7,7 @@ type Props = BlockContentProps & {
   side: "left" | "right";
 };
 
-const { title, date, location, icon, description, side } = Astro.props;
+const { title, date, time, location, icon, description, side } = Astro.props;
 ---
 
 <div class="timeline-entry">
@@ -17,6 +17,7 @@ const { title, date, location, icon, description, side } = Astro.props;
         <TimelineBlockContent
           title={title}
           date={date}
+          time={time}
           location={location}
           icon={icon}
           description={description}
@@ -30,6 +31,7 @@ const { title, date, location, icon, description, side } = Astro.props;
         <TimelineBlockContent
           title={title}
           date={date}
+          time={time}
           location={location}
           icon={icon}
           description={description}

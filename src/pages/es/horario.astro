@@ -5,6 +5,7 @@ import Timeline from "../../components/Timeline.astro";
 import cheers from "../../images/cheers.png?url";
 import beach from "../../images/beach.png?url";
 import weddingRings from "../../images/wedding-rings.png?url";
+import discoBall from "../../images/disco-ball.png?url";
 
 changeLanguage("es");
 
@@ -12,6 +13,12 @@ const entries = [
     {
         title: t("schedule.welcomePartyTitle"),
         date: t("schedule.welcomePartyDate"),
+        time: t("schedule.welcomePartyTime"),
+        location: {
+            name: "Casa C\u00F3rdoba Estrella",
+            address: "Calle 36 #4-27, Cartagena, Colombia",
+            href: "https://goo.gl/maps/pgbzWGPA17nfVabK9",
+        },
         icon: {
             src: cheers,
             alt: "cheers!",
@@ -21,25 +28,46 @@ const entries = [
     {
         title: t("schedule.activityTitle"),
         date: t("schedule.activityDate"),
+        time: t("schedule.activityTime"),
+        location: {
+            name: t("schedule.activityLocationName"),
+            address: "Av. Blas de Lezo, Cartagena, Colombia",
+            href: "https://maps.app.goo.gl/txZowU82rhrRXFjv5",
+        },
         icon: {
             src: beach,
-            alt: "beach day?",
+            alt: "beach day",
         },
         description: t("schedule.activityDescription"),
     },
     {
-        title: t("schedule.weddingTitle"),
-        date: t("schedule.weddingDate"),
+        title: t("schedule.ceremonyTitle"),
+        date: t("schedule.ceremonyDate"),
+        time: t("schedule.ceremonyTime"),
+        location: {
+            name: "Santuario de San Pedro Claver",
+            address: "Plaza de San Pedro Claver, Cra. 4 #30-01, Cartagena, Colombia",
+            href: "https://maps.app.goo.gl/kMywu3DScdRLaxfM7",
+        },
+        icon: {
+            src: weddingRings,
+            alt: "<3",
+        },
+        description: t("schedule.ceremonyDescription"),
+    },
+    {
+        title: t("schedule.receptionTitle"),
+        date: t("schedule.receptionDate"),
+        time: t("schedule.receptionTime"),
         location: {
             name: "Casa C\u00F3rdoba Estrella",
             address: "Calle 36 #4-27, Cartagena, Colombia",
             href: "https://goo.gl/maps/pgbzWGPA17nfVabK9",
         },
         icon: {
-            src: weddingRings,
-            alt: "<3",
-        },
-        description: t("schedule.weddingDescription"),
+            src: discoBall,
+            alt: "disco ball",
+        }
     },
 ];
 ---

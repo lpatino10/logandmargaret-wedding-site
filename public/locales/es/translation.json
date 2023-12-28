@@ -25,13 +25,20 @@
   "schedule": {
     "welcomePartyTitle": "Cóctel de Bienvenida",
     "welcomePartyDate": "jueves, el 18 de abril",
-    "welcomePartyDescription": "¡Detalles a seguir!",
+    "welcomePartyTime": "7 p.m.",
+    "welcomePartyDescription": "Código de vestimenta: Fiesta Tropical",
     "activityTitle": "Actividad Diurna de Grupo",
     "activityDate": "viernes, el 19 de abril",
-    "activityDescription": "¡Detalles a seguir!",
-    "weddingTitle": "Día de Boda",
-    "weddingDate": "sábado, el 20 de abril",
-    "weddingDescription": "Código de vestimenta: ~Cóctel Tropical~ (consule la página de preguntas frecuentes para más información)"
+    "activityLocationName": "Reunirse en la Muelle de la Bodeguita",
+    "activityTime": "de 9 a.m. a 3 p.m.",
+    "activityDescription": "Código de vestimenta: Trajes de baño, prendas playeras, y protector solar :)",
+    "ceremonyTitle": "Ceremonia de Boda",
+    "ceremonyDate": "sábado, el 20 de abril",
+    "ceremonyTime": "5 p.m.",
+    "ceremonyDescription": "Código de vestimenta: ~Cóctel Tropical~ (consule la página de preguntas frecuentes para más información)",
+    "receptionTitle": "Recepción de Boda",
+    "receptionDate": "sábado, el 20 de abril",
+    "receptionTime": "6 p.m."
   },
   "travel": {
     "flightsTitle": "Vuelos",

@@ -23,15 +23,22 @@
     "proposalBody": "On a sunny April day, they took a walk to the Arboretum. Logan knew Margaret would love any chance to hang out with some trees. There was a spot amongst the pines picked out with their friends Emma and Freddy waiting in the bushes to take pictures. They both blacked out, but she said yes, and they got to celebrate at night over pisco sours with a bunch of their closest friends. The rest is history!"
   },
   "schedule": {
-    "welcomePartyTitle": "Welcome Party",
+    "welcomePartyTitle": "Welcome Party & Salsa Class",
     "welcomePartyDate": "Thursday, April 18th",
-    "welcomePartyDescription": "Details to Follow!",
+    "welcomePartyTime": "7PM",
+    "welcomePartyDescription": "Attire: Tropical Party",
     "activityTitle": "Daytime Group Activity",
     "activityDate": "Friday, April 19th",
-    "activityDescription": "Details to Follow!",
-    "weddingTitle": "Wedding Day",
-    "weddingDate": "Saturday, April 20th",
-    "weddingDescription": "Dress code: ~Tropical Cocktail~ (see FAQ page for more info)"
+    "activityLocationName": "Meet at Muelle de la Bodeguita",
+    "activityTime": "9AM - 3PM",
+    "activityDescription": "Attire: Swimsuits, coverups, sunscreen :)",
+    "ceremonyTitle": "Wedding Ceremony",
+    "ceremonyDate": "Saturday, April 20th",
+    "ceremonyTime": "5PM",
+    "ceremonyDescription": "Dress code: ~Tropical Cocktail~ (see FAQ page for more info)",
+    "receptionTitle": "Wedding Reception",
+    "receptionDate": "Saturday, April 20th",
+    "receptionTime": "6PM"
   },
   "travel": {
     "flightsTitle": "Flights",
