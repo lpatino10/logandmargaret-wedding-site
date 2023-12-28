@@ -24,21 +24,17 @@
   },
   "schedule": {
     "welcomePartyTitle": "Cóctel de Bienvenida",
-    "welcomePartyDate": "jueves, el 18 de abril",
-    "welcomePartyTime": "7 p.m.",
+    "welcomePartyDate": "jueves, el 18 de abril a las 7 de la noche",
     "welcomePartyDescription": "Código de vestimenta: Fiesta Tropical",
     "activityTitle": "Actividad Diurna de Grupo",
-    "activityDate": "viernes, el 19 de abril",
+    "activityDate": "viernes, el 19 de abril de 9 a.m. a 3 p.m.",
     "activityLocationName": "Reunirse en la Muelle de la Bodeguita",
-    "activityTime": "de 9 a.m. a 3 p.m.",
     "activityDescription": "Código de vestimenta: Trajes de baño, prendas playeras, y protector solar :)",
     "ceremonyTitle": "Ceremonia de Boda",
-    "ceremonyDate": "sábado, el 20 de abril",
-    "ceremonyTime": "5 p.m.",
+    "ceremonyDate": "sábado, el 20 de abril a las 5 de la noche",
     "ceremonyDescription": "Código de vestimenta: ~Cóctel Tropical~ (consule la página de preguntas frecuentes para más información)",
     "receptionTitle": "Recepción de Boda",
-    "receptionDate": "sábado, el 20 de abril",
-    "receptionTime": "6 p.m."
+    "receptionDate": "sábado, el 20 de abril a las 6 de la noche"
   },
   "travel": {
     "flightsTitle": "Vuelos",
@@ -63,7 +59,7 @@
   },
   "registry": {
     "title": "Gracias",
-    "body": "Lo más importante es tenerte allí en el gran día, ¡pero agradecemos cualquier apoyo adicional!",
+    "body": "Si estás comprando un regalo físico, pedimos que por favor lo envíes a nuestra dirección en vez de traerlo a la boda.",
     "buttonLabel": "Ver registro"
   },
   "rsvp": {
