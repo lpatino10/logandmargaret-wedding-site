@@ -1,8 +1,16 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/TabPage.astro";
+import WeddingPartyLayout from "../components/WeddingPartyLayout.astro";
 
 changeLanguage("en");
 ---
 
-<Layout title="Wedding Party" description="Our wonderful wedding party!" />
+<Layout
+  title={t("pages.weddingParty")}
+  description="Our wonderful wedding party!"
+>
+  <div class="text-container">
+    <WeddingPartyLayout />
+  </div>
+</Layout>

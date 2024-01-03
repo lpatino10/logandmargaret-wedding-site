@@ -1,0 +1,35 @@
+---
+import { Image } from "@astrojs/image/components";
+
+interface Props {
+  title: string;
+  blurb: string;
+  picture: {
+    src: string;
+    alt: string;
+  }
+}
+
+const { title, blurb, picture } = Astro.props;
+---
+
+<div class="container">
+  <div class="image-container">
+    <Image src={picture.src} alt={picture.alt} height={500} width={500} />
+  </div>
+  <h4>{title}</h4>
+  <p>{blurb}</p>
+</div>
+<style>
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container {
+    border-radius: 16px;
+    height: 240px;
+    overflow: hidden;
+    width: 240px;
+  }
+</style>

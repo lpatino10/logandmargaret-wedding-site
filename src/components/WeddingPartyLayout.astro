@@ -1,0 +1,153 @@
+---
+import WeddingPartyPhoto from "./WeddingPartyPhoto.astro";
+import cheers from "../images/cheers.png?url";
+
+import mccoy from "../images/mccoy.jpg?url";
+import niel from "../images/niel.jpg?url";
+import brian from "../images/brian.jpg?url";
+import nick from "../images/nick.jpg?url";
+import jo from "../images/jo.jpg?url";
+import nolan from "../images/nolan.jpg?url";
+
+const bestMates = [
+  {
+    title: "Mary Penny",
+    blurb: "erpgijorgo",
+    picture: {
+      src: cheers,
+      alt: "Mary",
+    },
+  },
+  {
+    title: "McCoy Patiño",
+    blurb: "erpgijorgo",
+    picture: {
+      src: mccoy,
+      alt: "McCoy",
+    },
+  },
+];
+
+const bridesmaidsAndGroomsmen = [
+  {
+    title: "Kayla Sousa",
+    blurb: "erpgijorgo",
+    picture: {
+      src: cheers,
+      alt: "Kayla",
+    },
+  },
+  {
+    title: "Niel Skalican",
+    blurb: "erpgijorgo",
+    picture: {
+      src: niel,
+      alt: "Niel",
+    },
+  },
+  {
+    title: "Megan Bortle",
+    blurb: "erpgijorgo",
+    picture: {
+      src: cheers,
+      alt: "Megan",
+    },
+  },
+  {
+    title: "Brian Hoffman",
+    blurb: "erpgijorgo",
+    picture: {
+      src: brian,
+      alt: "Brian",
+    },
+  },
+  {
+    title: "Abby Richman",
+    blurb: "erpgijorgo",
+    picture: {
+      src: cheers,
+      alt: "Abby",
+    },
+  },
+  {
+    title: "Nick Casto",
+    blurb: "erpgijorgo",
+    picture: {
+      src: nick,
+      alt: "Nick",
+    },
+  },
+  {
+    title: "Ana Sather",
+    blurb: "erpgijorgo",
+    picture: {
+      src: cheers,
+      alt: "Ana",
+    },
+  },
+  {
+    title: "Jonathan Espiard",
+    blurb: "erpgijorgo",
+    picture: {
+      src: jo,
+      alt: "Jo",
+    },
+  },
+  {
+    title: "Chelsea Clark",
+    blurb: "erpgijorgo",
+    picture: {
+      src: cheers,
+      alt: "Chelsea",
+    },
+  },
+  {
+    title: "Nolan Rudolph",
+    blurb: "erpgijorgo",
+    picture: {
+      src: nolan,
+      alt: "Nolan",
+    },
+  },
+  {
+    title: "Claire Jones",
+    blurb: "erpgijorgo",
+    picture: {
+      src: cheers,
+      alt: "Claire",
+    },
+  },
+];
+---
+
+<h3 class="section-title">Best Mates</h3>
+<div class="top-line">
+  {bestMates.map((memberProps) => <WeddingPartyPhoto {...memberProps} />)}
+</div>
+<h3 class="section-title">Bridesmaids & Groomsmen</h3>
+<div class="grid">
+  {
+    bridesmaidsAndGroomsmen.map((memberProps) => (
+      <WeddingPartyPhoto {...memberProps} />
+    ))
+  }
+</div>
+<style>
+  .section-title {
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+
+  .top-line {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+</style>
