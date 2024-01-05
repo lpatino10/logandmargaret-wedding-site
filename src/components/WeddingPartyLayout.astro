@@ -1,6 +1,6 @@
 ---
+import { changeLanguage, t } from "i18next";
 import WeddingPartyPhoto from "./WeddingPartyPhoto.astro";
-import cheers from "../images/cheers.png?url";
 
 import mccoy from "../images/mccoy.jpg?url";
 import niel from "../images/niel.jpg?url";
@@ -8,19 +8,29 @@ import brian from "../images/brian.jpg?url";
 import nick from "../images/nick.jpg?url";
 import jo from "../images/jo.jpg?url";
 import nolan from "../images/nolan.jpg?url";
+import mary from "../images/mary.jpg?url";
+import kayla from "../images/kayla.jpg?url";
+import megan from "../images/megan.jpg?url";
+import abby from "../images/abby.jpg?url";
+import ana from "../images/ana.jpg?url";
+import chelsea from "../images/chelsea.jpg?url";
+import claire from "../images/claire.jpg?url";
+import mark from "../images/mark.png?url";
+
+changeLanguage("en");
 
 const bestMates = [
   {
     title: "Mary Penny",
-    blurb: "erpgijorgo",
+    blurb: "TBD",
     picture: {
-      src: cheers,
+      src: mary,
       alt: "Mary",
     },
   },
   {
     title: "McCoy Patiño",
-    blurb: "erpgijorgo",
+    blurb: t("weddingParty.mccoy"),
     picture: {
       src: mccoy,
       alt: "McCoy",
@@ -31,47 +41,47 @@ const bestMates = [
 const bridesmaidsAndGroomsmen = [
   {
     title: "Kayla Sousa",
-    blurb: "erpgijorgo",
+    blurb: "TBD",
     picture: {
-      src: cheers,
+      src: kayla,
       alt: "Kayla",
     },
   },
   {
     title: "Niel Skalican",
-    blurb: "erpgijorgo",
+    blurb: t("weddingParty.niel"),
     picture: {
       src: niel,
       alt: "Niel",
     },
   },
   {
-    title: "Megan Bortle",
-    blurb: "erpgijorgo",
+    title: "Claire Jones",
+    blurb: "TBD",
     picture: {
-      src: cheers,
-      alt: "Megan",
+      src: claire,
+      alt: "Claire",
     },
   },
   {
     title: "Brian Hoffman",
-    blurb: "erpgijorgo",
+    blurb: t("weddingParty.brian"),
     picture: {
       src: brian,
       alt: "Brian",
     },
   },
   {
-    title: "Abby Richman",
-    blurb: "erpgijorgo",
+    title: "Megan Bortle",
+    blurb: "TBD",
     picture: {
-      src: cheers,
-      alt: "Abby",
+      src: megan,
+      alt: "Megan",
     },
   },
   {
     title: "Nick Casto",
-    blurb: "erpgijorgo",
+    blurb: t("weddingParty.nick"),
     picture: {
       src: nick,
       alt: "Nick",
@@ -79,15 +89,15 @@ const bridesmaidsAndGroomsmen = [
   },
   {
     title: "Ana Sather",
-    blurb: "erpgijorgo",
+    blurb: "TBD",
     picture: {
-      src: cheers,
+      src: ana,
       alt: "Ana",
     },
   },
   {
     title: "Jonathan Espiard",
-    blurb: "erpgijorgo",
+    blurb: t("weddingParty.jo"),
     picture: {
       src: jo,
       alt: "Jo",
@@ -95,51 +105,69 @@ const bridesmaidsAndGroomsmen = [
   },
   {
     title: "Chelsea Clark",
-    blurb: "erpgijorgo",
+    blurb: "TBD",
     picture: {
-      src: cheers,
+      src: chelsea,
       alt: "Chelsea",
     },
   },
   {
     title: "Nolan Rudolph",
-    blurb: "erpgijorgo",
+    blurb: t("weddingParty.nolan"),
     picture: {
       src: nolan,
       alt: "Nolan",
     },
   },
   {
-    title: "Claire Jones",
-    blurb: "erpgijorgo",
+    title: "Abby Richman",
+    blurb: "TBD",
     picture: {
-      src: cheers,
-      alt: "Claire",
+      src: abby,
+      alt: "Abby",
+    },
+  },
+  {
+    title: "MarcVic Naniong",
+    blurb: "TBD",
+    picture: {
+      src: mark,
+      alt: "Mark",
     },
   },
 ];
 ---
 
-<h3 class="section-title">Best Mates</h3>
-<div class="top-line">
-  {bestMates.map((memberProps) => <WeddingPartyPhoto {...memberProps} />)}
-</div>
-<h3 class="section-title">Bridesmaids & Groomsmen</h3>
-<div class="grid">
-  {
-    bridesmaidsAndGroomsmen.map((memberProps) => (
-      <WeddingPartyPhoto {...memberProps} />
-    ))
-  }
+<div class="wrapper">
+  <h3 class="section-title">Best Mates</h3>
+  <div class="row">
+    {bestMates.map((memberProps) => <WeddingPartyPhoto {...memberProps} />)}
+  </div>
+  <h3 class="section-title">Wedding Party</h3>
+  <div class="grid">
+    {
+      bridesmaidsAndGroomsmen.map((memberProps) => (
+        <WeddingPartyPhoto {...memberProps} />
+      ))
+    }
+  </div>
 </div>
 <style>
-  .section-title {
-    align-self: center;
-    margin-bottom: 1rem;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 220ch;
+    padding: 20px 64px 46px 64px;
   }
 
-  .top-line {
-    justify-content: space-around;
+  .section-title {
+    align-self: center;
+    display: flex;
+  }
+
+  .row {
+    justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
@@ -147,7 +175,8 @@ const bridesmaidsAndGroomsmen = [
 
   .grid {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 6rem;
+    grid-template-columns: repeat(auto-fill, 360px);
+    justify-content: center;
   }
 </style>

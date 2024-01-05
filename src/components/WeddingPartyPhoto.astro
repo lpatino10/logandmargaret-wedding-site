@@ -7,7 +7,7 @@ interface Props {
   picture: {
     src: string;
     alt: string;
-  }
+  };
 }
 
 const { title, blurb, picture } = Astro.props;
@@ -15,9 +15,9 @@ const { title, blurb, picture } = Astro.props;
 
 <div class="container">
   <div class="image-container">
-    <Image src={picture.src} alt={picture.alt} height={500} width={500} />
+    <Image src={picture.src} alt={picture.alt} height={600} width={600} />
   </div>
-  <h4>{title}</h4>
+  <h4 class="name">{title}</h4>
   <p>{blurb}</p>
 </div>
 <style>
@@ -25,11 +25,17 @@ const { title, blurb, picture } = Astro.props;
     align-items: center;
     display: flex;
     flex-direction: column;
+    max-width: 360px;
   }
+
   .image-container {
-    border-radius: 16px;
-    height: 240px;
+    border-radius: 48px;
+    height: 360px;
     overflow: hidden;
-    width: 240px;
+    width: 360px;
+  }
+
+  .name {
+    margin-bottom: 0.5rem;
   }
 </style>

@@ -23,6 +23,14 @@
     "proposalTitle": "The Proposal",
     "proposalBody": "On a sunny April day, they took a walk to the Arboretum. Logan knew Margaret would love any chance to hang out with some trees. There was a spot amongst the pines picked out with their friends Emma and Freddy waiting in the bushes to take pictures. They both blacked out, but she said yes, and they got to celebrate at night over pisco sours with a bunch of their closest friends. The rest is history!"
   },
+  "weddingParty": {
+    "mccoy": "Logan's only, younger sibling. They live across the country from each other now but have always picked things right back up whenever they get together.",
+    "niel": "Niel is Logan's oldest friend. They met when they were in 6th grade and have stayed friends ever since, even after Logan switched to a rival high school and soccer team.",
+    "brian": "The Hoffmans lived across the street from the Patiños throughout Brian and Logan's high school and college years. During high school especially, Brian would be over almost every day after school.",
+    "nick": "Nick and Logan met on a club soccer team the spring before Logan switched to the same high school. They've always shared a love for soccer and sports in general.",
+    "jo": "Jo and Logan met at work on the same team during the pandemic, keeping up mostly virtually throughout 2020 and when Margaret and Logan were out of the country in 2021. Jo's back in France now but they're hoping to keep making trips to see each other in Europe or back in the states.",
+    "nolan": "Nolan and Logan met the first summer they both moved to Boston, bonding over the fact that both are from Ohio and studied computer science at Ohio State, even though they never ran into each other."
+  },
   "schedule": {
     "welcomePartyTitle": "Welcome Party & Salsa Class",
     "welcomePartyDate": "Thursday, April 18th at 7PM",
