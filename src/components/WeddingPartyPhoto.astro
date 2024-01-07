@@ -26,13 +26,14 @@ const { title, blurb, picture } = Astro.props;
     display: flex;
     flex-direction: column;
     max-width: 380px;
+    width: 100%;
   }
 
   .image-container {
     border-radius: 48px;
-    height: 380px;
+    max-height: 380px;
     overflow: hidden;
-    width: 380px;
+    max-width: 380px;
   }
 
   .name {
