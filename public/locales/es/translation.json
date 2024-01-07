@@ -24,12 +24,20 @@
     "proposalBody": "En un soleado día de abril, caminaron al arboreto cerca de su apartamento. Logan sabía que a Margaret le encantaría cualquier oportunidad de estar entre los árboles. Había un sitio escogido entre los pinos donde estaban esperando sus amigos Emma y Freddy para tomar fotos. Los dos se desmayaron, pero ella dijo que sí, y celebraron esa noche con pisco sours y amigos cercanos. ¡El resto es historia!"
   },
   "weddingParty": {
+    "mary": "Mary y Margaret se conocieron el primer día de universidad y han sido inseparables desde entonces (tanto que tenían el apodo \"Margaret Penny\" porque siempre estaban juntas). Margaret tuvo la suerte de ser la dama de honor de Mary y aprecia su dedicada amistad.",
     "mccoy": "El único hermano menor de Logan. Viven al otro lado del país uno del otro, pero han siempre podido seguir como antes cuando están juntos.",
+    "kayla": "Una compañera Northeastern Husky y Kappa, Kayla realmente les ha permitido a Margaret y Logan ser parte de su familia, dándoles recorridos por Fall River y Lisbon y reglando a Margaret el apodo \"Doctora Margaret\" para sus gemelos.",
     "niel": "Niel es el amigo más antiguo de Logan. Se conocieron cuando estaban en el sexto grado y se han quedado amigos desde entonces, incluso después de que Logan se fue a una escuela y equipo de fútbol rival.",
+    "claire": "Margaret y Claire se conocieron y se unieron en el equipo de hockey sobre césped del bachillerato. Se mantienen su amistad a larga distancia con llamadas telefónicas regulares que duran horas.",
     "brian": "Las familias de Brian y Logan eran vecinos mientras que los dos estaban en el bachillerato y la universidad. Brian estaba en la casa de Logan casi todos los días después de las clases.",
+    "megan:": "Amigas desde el bachillerato, Megan es la pareja de beer pong original de Margaret y está con Margaret en las buenas y en las malas. Megan sigue inspirando a Margaret con su talento artístico y empresarial.",
     "nick": "Nick y Logan se conocieron en un equipo de fútbol la primavera antes de que Logan empezó a ir a la misma escuela que Nick. Los dos han siempre compartido una pasión para fútbol y el deporte en general.",
+    "chelsea:": "La hermana mayor de Margaret en la hermandad de mujeres convertida en hermana mayor en la vida real, quien es siempre el alma de la fiesta y la amiga más mas acogedora.",
     "jo": "Jo y Logan se conocieron en el trabajo durante la pandemia, manteniendose en contacto unos con otros virtualmente durante todo el año 2020 y cuando Margaret y Logan vivieron fuera del país en 2020. Jo está de vuela en Francia ahora pero el y Logan esperan seguir viajando a reunirse en Europa on en los Estados Unidos.",
-    "nolan": "Nolan y Logan se conocieron el primer verano que los dos se mudieron a Boston. Se unieron por el hecho de que los dos son de Ohio y los dos estudiaron ciencias de la computación en Ohio State, aunque nunca se encontraron allá."
+    "ana:": "Margaret y Ana se unieron por las dificultades de la escuela de Medicina y muchísimas millas correindo al lado del Río Charles, al lado del Lago Erie, y en Minnesota, entrenando y teniendo conversaciones íntimas.",
+    "nolan": "Nolan y Logan se conocieron el primer verano que los dos se mudieron a Boston. Se unieron por el hecho de que los dos son de Ohio y los dos estudiaron ciencias de la computación en Ohio State, aunque nunca se encontraron allá.",
+    "abby:": "Abby y Margaret se conocieron en su dormitorio el primer año de universidad y comparten el amor por esquiar, cocinar, ir de compras, medicina, y pasar lo más tiempo posible juntas.",
+    "mark:": "TBD"
   },
   "schedule": {
     "welcomePartyTitle": "Cóctel de Bienvenida",

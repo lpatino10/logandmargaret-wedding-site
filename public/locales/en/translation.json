@@ -24,12 +24,20 @@
     "proposalBody": "On a sunny April day, they took a walk to the Arboretum. Logan knew Margaret would love any chance to hang out with some trees. There was a spot amongst the pines picked out with their friends Emma and Freddy waiting in the bushes to take pictures. They both blacked out, but she said yes, and they got to celebrate at night over pisco sours with a bunch of their closest friends. The rest is history!"
   },
   "weddingParty": {
+    "mary": "Mary and Margaret met on the first day of college and have been inseparable ever since (so much so that people used to call them Margaret Penny as a shorthand since they were always together). Margaret was lucky enough to serve as Mary's maid of honor, and appreciates Mary's dedicated friendship over the years.",
     "mccoy": "Logan's only, younger sibling. They live across the country from each other now but have always picked things right back up whenever they get together.",
+    "kayla": "A fellow Northeastern Husky and Kappa, Kayla has truly allowed us to become part of her family, giving us tours of Fall River and Lisbon, and gifting Margaret the forever name \"Doctor Margaret\" amongst her twins.",
     "niel": "Niel is Logan's oldest friend. They met when they were in 6th grade and have stayed friends ever since, even after Logan switched to a rival high school and soccer team.",
+    "claire": "Margaret and Claire met and bonded during high school field hockey, and maintain their long-distance best friendship through regular hours-long phone calls.",
     "brian": "The Hoffmans lived across the street from the Patiños throughout Brian and Logan's high school and college years. During high school especially, Brian would be over almost every day after school.",
+    "megan": "Friends since high school, Megan is Margaret's ride or die friend and original beer pong partner, who continues to inspire Margaret with her artistic and entrepreneurial talents.",
     "nick": "Nick and Logan met on a club soccer team the spring before Logan switched to the same high school. They've always shared a love for soccer and sports in general.",
+    "chelsea": "Margaret's big sister in sorority turned big sister in real life, who is always the life of the party and the most welcoming friend.",
     "jo": "Jo and Logan met at work on the same team during the pandemic, keeping up mostly virtually throughout 2020 and when Margaret and Logan were out of the country in 2021. Jo's back in France now but they're hoping to keep making trips to see each other in Europe or back in the states.",
-    "nolan": "Nolan and Logan met the first summer they both moved to Boston, bonding over the fact that both are from Ohio and studied computer science at Ohio State, even though they never ran into each other."
+    "ana": "Margaret and Ana bonded over the trials of medical school and many, many miles of running along the Charles River, Lake Erie, and in Minnesota training and having heart-to-hearts.",
+    "nolan": "Nolan and Logan met the first summer they both moved to Boston, bonding over the fact that both are from Ohio and studied computer science at Ohio State, even though they never ran into each other.",
+    "abby": "Abby and Margaret met in their freshman year dorm, and share loves of skiing, cooking, shopping, medicine, and spending as much time together as possible.",
+    "mark": "TBD"
   },
   "schedule": {
     "welcomePartyTitle": "Welcome Party & Salsa Class",
